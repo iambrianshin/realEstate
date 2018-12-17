@@ -117,7 +117,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 0.5rem 2.5rem;
+  padding: 1rem 2.5rem;
   background-color: #222e2e;
 }
 
@@ -265,8 +265,8 @@ body {
     display: none;
   }
   .phone-nav__button {
-    width: 5rem;
-    height: 5rem;
+    width: 3.1rem;
+    height: 3.1rem;
     position: absolute;
     top: 0.2rem;
     right: 0.5rem;
@@ -283,7 +283,7 @@ body {
     justify-content: flex-start;
     position: fixed;
     padding: 2rem;
-    top: 4rem;
+    top: 3rem;
     right: 0;
     background-color: #222e2e;
     opacity: 0;
@@ -293,7 +293,7 @@ body {
   .phone-nav__link {
     display: inline-block;
     font-family: "calluna";
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -309,7 +309,7 @@ body {
     display: flex;
   }
   .phone-nav__icon,
-  phone-nav__icon::before,
+  .phone-nav__icon::before,
   .phone-nav__icon::after {
     width: 2rem;
     height: 2px;
@@ -339,8 +339,8 @@ body {
   }
   .phone-nav__checkbox:checked + .phone-nav__button .phone-nav__icon::after {
     top: 0;
-    -webkit-transform: rotate(-135def);
-    transform: rotate(-135def);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
   }
 }
 
@@ -551,7 +551,7 @@ body {
 
 .gallery__img {
   width: calc(100% / 4 - 1rem);
-  height: 22.5rem;
+  height: 25rem;
   -o-object-fit: cover;
   object-fit: cover;
   margin: 0.5rem;
@@ -560,7 +560,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .gallery__img {
-    height: 20rem;
+    height: 22.5rem;
   }
 }
 @media only screen and (max-width: 46.25em) {
@@ -761,6 +761,7 @@ body {
   }
   .footer__upper h2 {
     margin-bottom: 2rem;
+    margin: 0 auto;
   }
 }
 
@@ -805,6 +806,12 @@ body {
   padding: 1.3rem 2.8rem;
   background-color: #1f2526;
   transition: all ease-out 250ms;
+}
+@media only screen and (max-width: 37.5em) {
+  .cta--footer {
+    padding: 1.3rem 1rem;
+    margin: 0 auto;
+  }
 }
 
 .cta--footer:hover {
