@@ -31,7 +31,7 @@ html {
 }
 @media only screen and (max-width: 112.5em) {
   html {
-    font-size: 70%;
+    font-size: 75%;
   }
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .paragraph {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: rgba(31, 37, 38, 0.75);
 }
 
@@ -56,7 +56,7 @@ body {
 /***************/
 
 .container {
-  padding: 9rem;
+  padding: 7rem;
 }
 @media only screen and (max-width: 75em) {
   .container {
@@ -81,7 +81,7 @@ body {
 }
 
 .container-big {
-  padding: 10rem 13rem;
+  padding: 10rem 10rem;
 }
 @media only screen and (max-width: 75em) {
   .container-big {
@@ -96,7 +96,8 @@ body {
 }
 
 .text-wrapper {
-  padding: 4rem 7rem;
+  padding: 2rem 18rem;
+  padding-bottom: 5rem;
 }
 
 .content-wrapper {
@@ -119,6 +120,11 @@ body {
   align-items: center;
   padding: 0.5rem 2.5rem;
   background-color: #222e2e;
+}
+@media only screen and (max-width: 37.5rem) {
+  .header {
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 .header__title {
@@ -162,7 +168,7 @@ body {
 }
 
 .heading-primary {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
   margin-bottom: 2rem;
@@ -219,7 +225,7 @@ body {
 
 .nav-dropdown__content {
   position: absolute;
-  width: 17rem;
+  width: 17.3rem;
   height: 0;
   padding-top: 1rem;
   margin-top: 1.5rem;
@@ -265,8 +271,8 @@ body {
     display: none;
   }
   .phone-nav__button {
-    width: 5rem;
-    height: 5rem;
+    width: 3.1rem;
+    height: 3.1rem;
     position: absolute;
     top: 0.2rem;
     right: 0.5rem;
@@ -283,7 +289,7 @@ body {
     justify-content: flex-start;
     position: fixed;
     padding: 2rem;
-    top: 4rem;
+    top: 3rem;
     right: 0;
     background-color: #222e2e;
     opacity: 0;
@@ -293,7 +299,7 @@ body {
   .phone-nav__link {
     display: inline-block;
     font-family: "calluna";
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -309,7 +315,7 @@ body {
     display: flex;
   }
   .phone-nav__icon,
-  phone-nav__icon::before,
+  .phone-nav__icon::before,
   .phone-nav__icon::after {
     width: 2rem;
     height: 2px;
@@ -339,9 +345,102 @@ body {
   }
   .phone-nav__checkbox:checked + .phone-nav__button .phone-nav__icon::after {
     top: 0;
-    -webkit-transform: rotate(-135def);
-    transform: rotate(-135def);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
   }
+}
+
+.section-nav {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-nav {
+    display: none;
+  }
+}
+
+.section-nav--contact {
+  display: flex;
+}
+@media only screen and (max-width: 37.5em) {
+  .section-nav--contact {
+    width: 100%;
+  }
+}
+
+.section-nav__heading {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.section-nav__link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: rgba(31, 37, 38, 0.4);
+  padding: 0.4rem 0;
+}
+
+.section-nav__link:hover {
+  color: #222;
+  transition: all ease-out 250ms;
+}
+
+.section-nav__text {
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  color: rgba(31, 37, 38, 0.75);
+}
+
+.section-group {
+  width: 75%;
+}
+
+@media only screen and (max-width: 75em) {
+  .section-group {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-group {
+    width: 100%;
+  }
+}
+
+.section-group__img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.section-group__sub-heading {
+  font-size: 1 rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.section-group__text {
+  font-size: 14px;
+  line-height: 1.6em;
+  letter-spacing: 0.4px;
+  color: rgba(31, 37, 38, 0.75);
+  margin: 3rem 0;
+}
+
+.section-flex {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 /***************/
@@ -371,7 +470,7 @@ body {
 }
 
 .hero--5-east {
-  height: 80vh;
+  height: 50vh;
   background-image: linear-gradient(
       to bottom,
       rgba(50, 69, 68, 0.8),
@@ -387,7 +486,7 @@ body {
 }
 
 .hero--18-sacket {
-  height: 80vh;
+  height: 50vh;
   background-image: linear-gradient(
       to bottom,
       rgba(50, 69, 68, 0.8),
@@ -403,7 +502,7 @@ body {
 }
 
 .hero--23-sacket {
-  height: 80vh;
+  height: 50vh;
   background-image: linear-gradient(
       to bottom,
       rgba(50, 69, 68, 0.8),
@@ -419,7 +518,7 @@ body {
 }
 
 .hero--6-cliffside {
-  height: 80vh;
+  height: 50vh;
   background-image: linear-gradient(
       to bottom,
       rgba(50, 69, 68, 0.8),
@@ -435,7 +534,7 @@ body {
 }
 
 .hero--2-cliffside {
-  height: 80vh;
+  height: 50vh;
   background-image: linear-gradient(
       to bottom,
       rgba(50, 69, 68, 0.8),
@@ -451,7 +550,7 @@ body {
 }
 
 .hero--7-cliffside {
-  height: 80vh;
+  height: 50vh;
   background-image: linear-gradient(
       to bottom,
       rgba(50, 69, 68, 0.8),
@@ -543,6 +642,15 @@ body {
 /*   Gallery   */
 /***************/
 
+.sqs-col-12 .sqs-col-8 {
+  width: 66.66%;
+}
+
+.page-content {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
 .gallery {
   width: 100%;
   display: flex;
@@ -592,8 +700,8 @@ body {
   }
 }
 .section-gallery__img {
-  width: calc(100% / 3 -1rem);
-  height: 22.5rem;
+  width: 31%;
+  height: 15rem;
   -o-object-fit: cover;
   object-fit: cover;
   margin: 0.5rem;
@@ -705,11 +813,11 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 4rem 0;
+  margin: 4rem 10rem;
 }
 
 .service-group {
-  width: calc(100% / 2 - 2rem);
+  width: calc(100% / 2 - 1rem);
 }
 @media only screen and (max-width: 37.5em) {
   .service-group {
@@ -718,7 +826,7 @@ body {
 }
 
 .service-group:first-child {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .service-group__img {
@@ -727,7 +835,7 @@ body {
 }
 
 .service-group__sub-heading {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   letter-spacing: 2px;
   font-weight: 300;
@@ -761,6 +869,7 @@ body {
   }
   .footer__upper h2 {
     margin-bottom: 2rem;
+    margin: 0 auto;
   }
 }
 
@@ -805,6 +914,12 @@ body {
   padding: 1.3rem 2.8rem;
   background-color: #1f2526;
   transition: all ease-out 250ms;
+}
+@media only screen and (max-width: 37.5em) {
+  .cta--footer {
+    padding: 1.3rem 1rem;
+    margin: 0 auto;
+  }
 }
 
 .cta--footer:hover {
